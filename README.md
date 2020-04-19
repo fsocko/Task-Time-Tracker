@@ -1,6 +1,6 @@
 ![Time Tracker Logo](/images/logo.png?raw=true)
 
-![URI](https://fsocko.github.io/Task-Time-Tracker/)
+[GH_Pages URL](https://fsocko.github.io/Task-Time-Tracker/)
 
 This web app will allow you to track the time you spend on various tasks.  It allows for definition of arbitrary tasks and quick transitions between tasks.  The app doesn't require an Internet connection; it runs solely in your browser without the need to contact any remote web servers.
 
