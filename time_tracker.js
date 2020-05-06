@@ -202,11 +202,17 @@ function ConvertMillisecondsToHoursMinsSecs( Milliseconds )
         Seconds = Math.round( Milliseconds / NumMillisecondsInSecond );
     }
 
-    return( { 'Hours'  : Hours,
-              'Minutes': Minutes,
-              'Seconds': Seconds } );
+    return( { 'Hours'  : pad(Hours, 2),
+              'Minutes': pad(Minutes, 2),
+              'Seconds': pad(Seconds,2) } );
 
 } // ConvertMillisecondsToHoursMinsSecs
+
+function pad(n, width, z) {
+  z = z || '0';
+  n = n + '';
+  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+}
 
 
 //------------------------------------------------------------------------------
